@@ -121,8 +121,7 @@ Average financial stress levels were generally low across households, although s
 
 ## Dashboard Preview
 
-<img width="1440" height="900" alt="Screenshot 2026-05-08 at 21 37 54" src="https://github.com/user-attachments/assets/5ab4e829-783f-4e0b-8fbf-5bb0ecec14c7" />
-
+<img width="1192" height="682" alt="Screenshot 2026-05-12 at 17 17 23" src="https://github.com/user-attachments/assets/2e31dae8-ca33-4eb0-8b29-be64138fdb7b" />
 
 ---
 
