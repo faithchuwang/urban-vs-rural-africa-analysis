@@ -1,0 +1,25 @@
+Field,Type,Description,Units / Typical range,Example
+Country,categorical,Country of household,"One of: Nigeria, Kenya, Ghana, Uganda, Tanzania, Rwanda, Senegal, Cameroon, Zambia, Malawi",Senegal
+Location,categorical,Settlement type,Urban or Rural,Rural
+Household_Size,integer,Number of people in household,1 – 12 (Poisson ~4),6
+Head_Age,integer,Age of household head,18 – 85,35
+Head_Gender,categorical,Gender of household head,"Male, Female, Other",Female
+Head_Education,categorical,Highest education level of head,"No_School, Primary, Secondary, Tertiary",Secondary
+Occupation,categorical,Primary occupation of household head,"Farmer, Trader, Salaried, Self_Employed, Student, Casual_Labour, Artisan",Trader
+Monthly_Income_USD,float,Estimated monthly household income (synthetic),"10 – 5,000 USD (clipped)",158.1
+Food_Cost_USD,float,Monthly food expenditure (modeled as % of income),? 5 USD,55.91
+Rent_Cost_USD,float,Monthly housing/rent cost (urban higher),? 0,0.00 or 40.00
+Transport_Cost_USD,float,Monthly transport cost,? 0,15.2
+Utilities_Cost_USD,float,"Utilities (electricity, water, phone)",? 0,9.48
+Other_Costs_USD,float,"Other monthly costs (includes random shocks e.g., school/health)",? 0,27
+Total_Expenditure_USD,float (derived),Sum of all monthly expenditures,? 0,147.59
+Has_Mobile_Money,bool,Household uses mobile money / e-wallet,True / False,FALSE
+Savings_Rate,float,Share of income saved monthly,0.000 – 0.600 (rounded),0.065
+Monthly_Savings_USD,float (derived),Monthly_Income_USD * Savings_Rate,? 0,10.29
+Has_Debt,bool,Household has outstanding debt,True / False,TRUE
+Debt_Outstanding_USD,float,Current debt outstanding (0 if none),0 or 20 – 1000,120.5
+Remittance_Received_USD,float,Non-zero if remittance received this period,0 or 5 – 400,0
+Access_to_Healthcare,bool,Reasonable access to healthcare services,True / False,TRUE
+Access_to_School,bool,Access to schooling (children),True / False,TRUE
+Percent_Income_on_Essentials,float (derived),(food+rent+transport+utilities) / (monthly_income + 1),0 – >1 (check outliers),0.508
+Financial_Stress_Index,float (derived),Normalized 0–1 composite index (higher = more stressed),0 (low) – 1 (high),0.011
